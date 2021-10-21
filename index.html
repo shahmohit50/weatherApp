@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+<div class="container">
+    <div class="weather">
+    <div class="header">
+        <div class="city">
+            <i class="fa fa-map-marker-alt"></i>XYZ
+        </div>
+
+        <div class="time">16 Oct 2021</div>
+        <div class="temperature"><label class="value">16&deg</label> <span class="icon"><img src="http://openweathermap.org/img/wn/50d.png"/></span></div>
+        <div class="weather-descr">Mostly Clear</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="information">
+        <div class="humidity">
+            <i class="fas fa-tint"></i>
+            <label class="textData">Humidity</label>
+            <br><label class="value">54%</label>   
+        </div>
+        <div class="avg-temp">
+            <i class="fas fa-thermometer-quarter"></i>
+            <label class="textData">Avg. Temp.</label>
+            <br><label class="value">16.6&deg</label>
+        </div>
+        <div class="wind-speed">
+            <i class="fas fa-wind"></i>
+            <label class="textData">Wind Speed</label>
+            <br><label class="value">7m/s </label>
+        </div>
+        <div class="visibility">
+            <i class="fas fa-eye"></i>
+            <label class="textData">Visibility</label>
+            <br><label class="value"> 60%</label>
+        </div>
+    
+    </div>
+    <div class="search">
+        <button class="button1" type="button" onclick="hide()"><i class="fas fa-search fa-1x"></i></button>
+        <form class="input-group" onsubmit="getWeatherInformation(event)">
+            <input type="text" class="text" placeholder="Enter Location" required/>
+            <button class="button" type="submit">
+                <i class="fas fa-search fa-1x">
+                </i></button>
+        </form>
+    </div>
+    </div>
+</div>
+
+</body>
+<script src="./index.js"></script>
+</html>

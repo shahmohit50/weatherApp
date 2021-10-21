@@ -1,0 +1,119 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6YgvASdNLI7euASX5Ot0cChgAyNFebK7EKQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 25px;
+
+}
+.city{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    flex-direction: row;
+}
+.search .text{
+    width: 120px;
+    height: 35px;
+}
+.weather{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+body{
+    background: linear-gradient(45deg, red 0 50%, blue 50% 100%);
+    max-width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+.temperature{
+    height: 20vh;
+    font-size: 590%;
+}
+.temperature .icon{
+    font-size: 8vh;
+    max-width: 100%;
+    background-color: gold;
+    opacity: 0.9;
+    border-radius: 30%;
+}
+.search{
+    /* float: right;
+    margin-top: 12vh; */
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    
+}
+.input-group{
+    display: none;
+}
+
+ i{
+    color: #fff;
+}
+.search .button1,button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background:linear-gradient(45deg, red 0 55%, blue 40% 100%); 
+}
+.header{
+    text-align: center;
+}
+
+.information{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    
+}
+
+/* .information .humidity,
+.avg-temp, .wind-speed{
+    
+} */
+.textData{
+    display: none;
+}
+.humidity, .wind-speed, .avg-temp,.visibility{
+    font-size: xx-large;
+    width: 25%;
+    background: linear-gradient(to left top, blue, red); 
+    text-align: center;
+}
+.information :hover > label{
+    display: inline-block;
+    transform: scaleX(100%);
+    transition: all 0.3s ease-in-out;
+}
+.weather-descr{
+    font-size: x-large;
+}
+.input-group .text{
+    border-radius: 25px;
+    color: black;
+    background: linear-gradient(to left top, rgb(247, 111, 224), rgb(253, 219, 219));
+    border-style: groove;
+    
+}
